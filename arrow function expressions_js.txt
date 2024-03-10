@@ -1,0 +1,28 @@
+arrow function = compact alternative to a traditional function expression
+=>
+
+
+let grades = [50, 90, 70, 100, 80, 60];
+
+//Normal method
+
+/*
+grades.sort(descending);
+grades.forEach(print);
+
+function descending(x, y){
+    return y - x
+}
+
+function print(element){
+    console.log(element)
+}
+*/
+
+//using =>
+
+grades.sort((x, y) => y - x);
+grades.forEach((element) => console.log(element));
+
+
+
